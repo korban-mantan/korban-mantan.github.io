@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" href="img/mcc.png" type="image/x-icon" />
+    <link rel="stylesheet" href="vid.css" type="text/css" media="all" />
+    <title>MCC</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/mcc.png" alt="" width="30" height="24" class="d-inline-block align-text-top rounded">
+      MCC
+    </a>
+  </div>
+</nav>
+    <div class="container">
+        <video src="vid/wami1.mp4" class="slider" autoplay loop controls></video>
+
+        <ul>
+            <li onclick="videoslider('vid/wami1.mp4')"><video src="vid/wami1.mp4"></video></li>
+            <li onclick="videoslider('vid/wami2.mp4')"><video src="vid/wami2.mp4"></video></li>
+            <li onclick="videoslider('vid/wami3.mp4')"><video src="vid/wami3.mp4"></video></li>
+            <li onclick="videoslider('vid/wami4.mp4')"><video src="vid/wami4.mp4"></video></li>
+        </ul>
+    </div>
+ <a type="button" class="btn btn-primary btn-lg px-4 gap-3" href="snek.html">Contoh 3</a>
+
+
+    <script>
+
+        function videoslider(links){
+            document.querySelector(".slider").src = links;
+        }
+
+    </script>
+
+</body>
+</html>
